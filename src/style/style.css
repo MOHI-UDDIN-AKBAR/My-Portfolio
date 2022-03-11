@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+.toolBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.toolBar .girdContainer {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.toolBar .mobileVersion .addIcon {
+  transform: rotateZ(45deg);
+}
+.toolBar .mobileVersion .MenuBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.toolBar .mobileVersion .MenuBar .category {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  height: 90vh;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1) inset;
+  -webkit-animation: menuBar 1s 1 linear;
+          animation: menuBar 1s 1 linear;
+}
+.toolBar .mobileVersion .MenuBar .category .button {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+}
+.toolBar .mobileVersion .MenuBar .category .button:hover {
+  color: black;
+  background-color: #cccccc;
+}
+
+@-webkit-keyframes menuBar {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  100% {
+    width: 320px;
+    opacity: 1;
+  }
+}
+
+@keyframes menuBar {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  100% {
+    width: 320px;
+    opacity: 1;
+  }
+}
+.heroSection {
+  margin-top: 80px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+.heroSection .icons {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+@mixin flexCenter($justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
+.toolBar {
+  @include flexCenter(space-between, row);
+  .girdContainer {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mobileVersion {
+    .addIcon {
+      transform: rotateZ(45deg);
+    }
+    .MenuBar {
+      @include flexCenter(center, row);
+      position: relative;
+      // overflow: hidden;
+      z-index: 1;
+      .category {
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        height: 90vh;
+        width: 320px;
+        @include flexCenter(center, column);
+        // box-shadow: 0 0 r;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1) inset;
+        animation: menuBar 1s 1 linear;
+        // animation-delay: 1s;
+        .button {
+          width: 100%;
+          padding: 1.5rem;
+          margin: 10px auto;
+          text-align: center;
+          @include flexCenter(center, row);
+          //   position: fixed;
+          color: white;
+          &:hover {
+            color: black;
+            background-color: rgb(204, 204, 204);
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes menuBar {
+  0% {
+    width: 0px;
+    // height: 0vh;
+    opacity: 0;
+  }
+  90% {
+  }
+  100% {
+    width: 320px;
+    // height: 90vh;
+    opacity: 1;
+  }
+}
+
+//style for about
+
+.heroSection {
+  margin-top: 80px;
+  height: 90vh;
+  @include flexCenter(center, column);
+  position: relative;
+  // .mainHeading {
+  //   @include flexCenter(center, column);
+  // }
+  .icons {
+    // @include flexCenter(center, column);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
