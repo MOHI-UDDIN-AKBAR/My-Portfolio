@@ -33,14 +33,23 @@ const HeroSection = () => {
           display: { xs: "none", sm: "none", md: "flex" },
         }}
       >
-        <Fab aria-label="github" sx={{ boxShadow: 0, bgcolor: "white" }}>
-          <GitHubIcon sx={{ fontSize: { md: "30px", lg: "40px" }, m: 2 }} />
+        <Fab
+          aria-label="github"
+          sx={{ boxShadow: 0, bgcolor: "white", my: { md: 2, lg: 3 } }}
+        >
+          <GitHubIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
         </Fab>
-        <Fab aria-label="linkedin" sx={{ boxShadow: 0, bgcolor: "white" }}>
-          <LinkedInIcon sx={{ fontSize: { md: "30px", lg: "40px" }, m: 2 }} />
+        <Fab
+          aria-label="linkedin"
+          sx={{ boxShadow: 0, bgcolor: "white", my: { md: 2, lg: 3 } }}
+        >
+          <LinkedInIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
         </Fab>
-        <Fab aria-label="instagram" sx={{ boxShadow: 0, bgcolor: "white" }}>
-          <InstagramIcon sx={{ fontSize: { md: "30px", lg: "40px" }, m: 2 }} />
+        <Fab
+          aria-label="instagram"
+          sx={{ boxShadow: 0, bgcolor: "white", my: { md: 2, lg: 3 } }}
+        >
+          <InstagramIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
         </Fab>
       </Box>
     </Box>

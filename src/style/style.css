@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 .toolBar {
   display: flex;
   justify-content: space-between;
@@ -94,4 +97,121 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.about {
+  height: 90vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about .title {
+  -webkit-animation: title 1s 1 linear;
+          animation: title 1s 1 linear;
+}
+.about .description {
+  -webkit-animation: description 1s 1 linear;
+          animation: description 1s 1 linear;
+}
+
+@-webkit-keyframes title {
+  0% {
+    transform: scale(2, 2);
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: scale(2, 2);
+  }
+}
+@-webkit-keyframes description {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes description {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.projects {
+  height: 100vh;
+  overflow: scroll;
+}
+.projects .projectInfo {
+  border: 2px solid green;
+  position: relative;
+}
+.projects .projectInfo .number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.projects .projectInfo .projectType {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projects .projectInfo .info .tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.projects .imageGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.projects .imageGallery .smallImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@-webkit-keyframes hideAndShow {
+  0% {
+    background-color: #1f2633;
+    color: #1f2633;
+    opacity: 0;
+  }
+  90% {
+    background-color: #1f2633;
+    color: #1f2633;
+  }
+}
+@keyframes hideAndShow {
+  0% {
+    background-color: #1f2633;
+    color: #1f2633;
+    opacity: 0;
+  }
+  90% {
+    background-color: #1f2633;
+    color: #1f2633;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
 }/*# sourceMappingURL=style.css.map */

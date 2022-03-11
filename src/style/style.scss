@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @mixin flexCenter($justify, $direction) {
   display: flex;
   justify-content: $justify;
@@ -68,7 +71,7 @@
   }
 }
 
-//style for about
+//style for HeroSection
 
 .heroSection {
   margin-top: 80px;
@@ -85,4 +88,85 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
+
+//Style for About
+.about {
+  height: 90vh;
+  margin-bottom: 10vh;
+  @include flexCenter(center, column);
+  .title {
+    animation: title 1s 1 linear;
+  }
+  .description {
+    animation: description 1s 1 linear;
+  }
+}
+@keyframes title {
+  0% {
+    transform: scale(2, 2);
+  }
+}
+@keyframes description {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+//style for Work
+.projects {
+  height: 100vh;
+  overflow: scroll;
+  .projectInfo {
+    border: 2px solid green;
+    position: relative;
+    .number {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+    .projectType {
+      @include flexCenter(flex-start, row);
+    }
+    .info {
+      .tools {
+        @include flexCenter(center, row);
+        margin: 10px auto;
+      }
+    }
+  }
+  .imageGallery {
+    // background-color: green;
+    @include flexCenter(center, row);
+    .smallImages {
+      @include flexCenter(space-between, row);
+      // background-color: red;
+    }
+  }
+  .forAnimation {
+    // animation: hideAndShow 1s 1 linear;
+  }
+}
+@keyframes hideAndShow {
+  0% {
+    background-color: #1f2633;
+    color: #1f2633;
+    opacity: 0;
+  }
+  90% {
+    background-color: #1f2633;
+    color: #1f2633;
+  }
+  100% {
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }

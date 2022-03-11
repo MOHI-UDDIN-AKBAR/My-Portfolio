@@ -6,15 +6,17 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import { CssBaseline } from "@mui/material";
 import "./style/style.css";
 import { Box } from "@mui/system";
+import Skills from "./components/Skills/Skills";
 const App = () => {
   return (
     <React.Fragment>
       <CssBaseline />
       <Box component="div">
-        <Header />
-        <HeroSection />
-        {/* <About /> */}
-        {/* <Work /> */}
+        {/* <Header /> */}
+        {/* <HeroSection /> */}
+        <About />
+        <Work />
+        <Skills />
       </Box>
     </React.Fragment>
   );
