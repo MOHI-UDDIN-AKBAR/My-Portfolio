@@ -121,10 +121,12 @@
 
 //style for Work
 .projects {
-  height: 100vh;
-  overflow: scroll;
+  min-height: fit-content;
+  // overflow: scroll;
+  margin: 5vh auto;
   .projectInfo {
-    border: 2px solid green;
+    // border: 2px solid green;
+    // box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5) inset;
     position: relative;
     .number {
       position: absolute;
@@ -143,7 +145,11 @@
   }
   .imageGallery {
     // background-color: green;
-    @include flexCenter(center, row);
+    // @include flexCenter(center, row);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     .smallImages {
       @include flexCenter(space-between, row);
       // background-color: red;
@@ -169,4 +175,18 @@
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+//style for skills
+
+.skills {
+  @include flexCenter(center, column);
+  // border: 2px solid green;
+  .allButtons {
+    @include flexCenter(space-around, row);
+    // border: 2px solid red;
+  }
+  .iconOfSkills {
+    @include flexCenter(space-around, row);
+  }
 }

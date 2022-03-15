@@ -7,6 +7,7 @@ import { CssBaseline } from "@mui/material";
 import "./style/style.css";
 import { Box } from "@mui/system";
 import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contact/Contact";
 const App = () => {
   return (
     <React.Fragment>
@@ -14,9 +15,10 @@ const App = () => {
       <Box component="div">
         {/* <Header /> */}
         {/* <HeroSection /> */}
-        <About />
-        <Work />
-        <Skills />
+        {/* <About /> */}
+        {/* <Work /> */}
+        {/* <Skills /> */}
+        <Contact />
       </Box>
     </React.Fragment>
   );

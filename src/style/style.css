@@ -149,11 +149,12 @@
   }
 }
 .projects {
-  height: 100vh;
-  overflow: scroll;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin: 5vh auto;
 }
 .projects .projectInfo {
-  border: 2px solid green;
   position: relative;
 }
 .projects .projectInfo .number {
@@ -177,7 +178,6 @@
   margin: 10px auto;
 }
 .projects .imageGallery {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -214,4 +214,26 @@
 }
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.skills .allButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skills .iconOfSkills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
