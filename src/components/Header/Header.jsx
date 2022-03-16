@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
+import { Link } from "@mui/material";
+
 import {
   AppBar,
   Grid,
@@ -24,6 +27,9 @@ const Header = () => {
       });
     };
   }, [width]);
+  const handleEventListener = () => {
+    console.log("hello world");
+  };
   return (
     <>
       <AppBar color="inherit" sx={{ boxShadow: 0 }} position="fixed">
@@ -42,19 +48,92 @@ const Header = () => {
               display: { xs: "none", sm: "none", md: "flex" },
               maxWidth: { md: "65%", lg: "50%" },
               ml: { lg: 40 },
+              mr: "100px",
             }}
           >
-            {menu?.map((each, i) => (
+            {/* {menu?.map((each, i) => (
               <Grid item key={i}>
                 <Button
                   variant="text"
                   color="inherit"
                   sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                  onClick={(e) => handleEventListener()}
                 >
                   {each}
                 </Button>
               </Grid>
-            ))}
+            ))} */}
+            {/* <Link href="#footer" smooth>
+          footer
+        </Link> */}
+            <Grid item>
+              <Link href="#heroSection" underline="none" color="inherit">
+                <Button
+                  variant="text"
+                  color="inherit"
+                  sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                >
+                  HOME
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="#about" underline="none" color="inherit">
+                <Button
+                  variant="text"
+                  color="inherit"
+                  sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                >
+                  ABOUT
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="#work" underline="none" color="inherit">
+                <Button
+                  variant="text"
+                  color="inherit"
+                  sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                >
+                  WORK
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="#skills" underline="none" color="inherit">
+                <Button
+                  variant="text"
+                  color="inherit"
+                  sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                >
+                  SKILLS
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="#contact" underline="none" color="inherit">
+                <Button
+                  variant="text"
+                  color="inherit"
+                  sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                >
+                  CONTACT
+                </Button>
+              </Link>
+            </Grid>
+
+            {/* <Grid item>
+              <Button
+                variant="text"
+                color="inherit"
+                sx={{ fontWeight: 400, fontSize: "20px", p: 1.5 }}
+                onClick={(e) => handleEventListener()}
+              >
+                <Link to={"#work"} smooth>
+                  all
+                </Link>
+              </Button>
+            </Grid> */}
           </Grid>
           {width < 900 ? (
             <HeaderForSmallDevice />

@@ -10,6 +10,10 @@
   flex-direction: $direction;
   flex-wrap: wrap;
 }
+
+* {
+  scroll-behavior: smooth;
+}
 .toolBar {
   @include flexCenter(space-between, row);
   .girdContainer {
@@ -180,13 +184,30 @@
 //style for skills
 
 .skills {
+  min-height: 100vh;
   @include flexCenter(center, column);
-  // border: 2px solid green;
   .allButtons {
     @include flexCenter(space-around, row);
-    // border: 2px solid red;
   }
   .iconOfSkills {
     @include flexCenter(space-around, row);
+  }
+}
+
+//style for contactSection
+.contactSection {
+  margin-top: 100px;
+  @include flexCenter(center, column);
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+//style for footer
+
+.footer {
+  @include flexCenter(center, column);
+  background-color: #1f2633;
+  color: white;
+  .goodDay {
+    @include flexCenter(center, row);
   }
 }

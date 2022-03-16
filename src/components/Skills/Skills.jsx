@@ -7,10 +7,11 @@ import {
   SiJavascript,
   SiMaterialui,
   SiTailwindcss,
+  SiMongodb,
 } from "react-icons/si";
 import { Box, Button, Fab, Grid, Typography } from "@mui/material";
 const Skills = () => {
-  const option = ["All", "Tools", "Language", "familiar"];
+  const option = ["All", "comfortable", "familiar"];
   const icons = [
     <FaReact />,
     <FaSass />,
@@ -22,9 +23,10 @@ const Skills = () => {
     <SiJavascript />,
     <SiMaterialui />,
     <SiTailwindcss />,
+    <SiMongodb />,
   ];
   const tools = [<FaReact />, <FaSass />, <AiFillHtml5 />, <AiFillGithub />];
-  const language = [<SiJavascript />, <SiMaterialui />, <SiTailwindcss />];
+  const language = [<SiJavascript />];
   const familiar = [<DiCss3 />, <SiFirebase />];
   const [skills, setSkills] = useState(icons);
   const handleEventLister = (index) => {
@@ -44,6 +46,7 @@ const Skills = () => {
         component="div"
         className="skills"
         sx={{ maxWidth: "100%", my: "200px" }}
+        id="skills"
       >
         <Typography
           variant="h1"
@@ -51,7 +54,7 @@ const Skills = () => {
         >
           Skills
         </Typography>
-        <Grid
+        {/* <Grid
           container
           className="allButtons"
           sx={{
@@ -77,7 +80,7 @@ const Skills = () => {
               </Button>
             </Grid>
           ))}
-        </Grid>
+        </Grid> */}
         <Grid
           container
           sx={{
@@ -88,7 +91,7 @@ const Skills = () => {
               lg: "40%",
               xl: "40%",
             },
-            mt: "150px",
+            mt: "0px",
           }}
           className="iconOfSkills"
         >

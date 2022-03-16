@@ -1,10 +1,9 @@
 import { Box } from "@mui/system";
 import React from "react";
 import { Typography } from "@mui/material";
-
 const About = () => {
   return (
-    <Box component="div" className="about">
+    <Box component="div" className="about" id="about">
       <Typography
         variant="h1"
         // color="#616161"

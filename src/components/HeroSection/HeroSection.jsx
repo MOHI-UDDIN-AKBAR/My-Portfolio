@@ -1,4 +1,4 @@
-import { Box, Fab, IconButton, Typography } from "@mui/material";
+import { Box, Fab, IconButton, Link, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -6,7 +6,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <Box className="heroSection">
+    <Box className="heroSection" id="heroSection">
       <Typography
         variant="h1"
         sx={{ fontSize: { xs: "4rem", sm: "5rem", md: "6rem" } }}
@@ -37,19 +37,41 @@ const HeroSection = () => {
           aria-label="github"
           sx={{ boxShadow: 0, bgcolor: "white", my: { md: 2, lg: 3 } }}
         >
-          <GitHubIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
+          <Link
+            href="https://github.com/MOHI-UDDIN-AKBAR"
+            underline="none"
+            color="inherit"
+            target="_blank"
+          >
+            <GitHubIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
+          </Link>
         </Fab>
         <Fab
           aria-label="linkedin"
           sx={{ boxShadow: 0, bgcolor: "white", my: { md: 2, lg: 3 } }}
         >
-          <LinkedInIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
+          <Link
+            href="https://www.linkedin.com/in/mohi-uddin-akbar-316657210/"
+            underline="none"
+            color="inherit"
+            target="_blank"
+          >
+            <LinkedInIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
+          </Link>
         </Fab>
         <Fab
           aria-label="instagram"
           sx={{ boxShadow: 0, bgcolor: "white", my: { md: 2, lg: 3 } }}
         >
-          <InstagramIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
+          {" "}
+          <Link
+            href="https://www.instagram.com/imarafat3/"
+            underline="none"
+            color="inherit"
+            target="_blank"
+          >
+            <InstagramIcon sx={{ fontSize: { md: "30px", lg: "40px" } }} />
+          </Link>
         </Fab>
       </Box>
     </Box>
