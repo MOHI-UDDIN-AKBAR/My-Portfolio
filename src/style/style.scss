@@ -16,6 +16,8 @@
 }
 .toolBar {
   @include flexCenter(space-between, row);
+  // color: white;
+  // background-color: #1f2633;
   .girdContainer {
     justify-content: space-around;
     align-items: center;
@@ -78,6 +80,8 @@
 //style for HeroSection
 
 .heroSection {
+  // color: white;
+  // background-color: #1f2633;
   margin-top: 80px;
   height: 90vh;
   @include flexCenter(center, column);
@@ -98,6 +102,8 @@
 .about {
   height: 90vh;
   margin-bottom: 10vh;
+  // color: white;
+  // background-color: #1f2633;
   @include flexCenter(center, column);
   .title {
     animation: title 1s 1 linear;
@@ -128,6 +134,8 @@
   min-height: fit-content;
   // overflow: scroll;
   margin: 5vh auto;
+  // color: white;
+  // background-color: #1f2633;
   .projectInfo {
     // border: 2px solid green;
     // box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5) inset;
@@ -211,3 +219,7 @@
     @include flexCenter(center, row);
   }
 }
+// .changeMode {
+//   background-color: #1f2633;
+//   color: white;
+// }

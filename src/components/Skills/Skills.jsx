@@ -98,6 +98,7 @@ const Skills = () => {
           {skills?.map((each, i) => (
             <Grid
               item
+              key={i}
               sx={{
                 p: 3,
                 fontSize: {
@@ -112,9 +113,9 @@ const Skills = () => {
               className="icons"
             >
               {each}
-              <Typography variant="h6" sx={{ ml: 1.2, align: "center" }}>
+              {/* <Typography variant="h6" sx={{ ml: 1.2, align: "center" }}>
                 HTML
-              </Typography>
+              </Typography> */}
             </Grid>
           ))}
         </Grid>

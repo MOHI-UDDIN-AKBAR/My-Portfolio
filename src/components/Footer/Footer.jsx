@@ -22,7 +22,7 @@ const Footer = () => {
                 sx={{ fontSize: { xs: "2rem" } }}
                 fontFamily="Saira Condensed"
               >
-                Have a beautiful!
+                Have a beautiful day!
               </Typography>
             </Grid>
             <Grid item sx={{ fontSize: "50px", ml: 1, mt: 2 }}>

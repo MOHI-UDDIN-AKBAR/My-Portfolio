@@ -16,7 +16,7 @@ const HeroSection = () => {
       </Typography>
 
       <Typography
-        color="#212121"
+        // color="black"
         variant="h3"
         fontFamily="Amarante"
         sx={{ fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" } }}

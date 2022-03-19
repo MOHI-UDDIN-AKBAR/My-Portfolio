@@ -14,7 +14,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import HeaderForSmallDevice from "./HeaderForSmallDevice";
 const Header = () => {
-  const menu = ["HOME", "ABOUT", "WORK", "SKILL", "CONTACT"];
+  // const menu = ["HOME", "ABOUT", "WORK", "SKILL", "CONTACT"];
   const [mode, setMode] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -138,16 +138,22 @@ const Header = () => {
           {width < 900 ? (
             <HeaderForSmallDevice />
           ) : (
-            <IconButton
-              sx={{ p: 2, maxWidth: "10%" }}
-              onClick={(e) => setMode(!mode)}
-            >
-              {mode ? (
-                <NightsStayIcon sx={{ color: "MenuText" }} />
-              ) : (
-                <LightModeIcon sx={{ color: "MenuText" }} />
-              )}
-            </IconButton>
+            // <IconButton
+            //   sx={{
+            //     p: 2,
+            //     maxWidth: "10%",
+            //     bgcolor: mode ? "white" : "black",
+            //     color: mode ? "black" : "white",
+            //   }}
+            //   onClick={(e) => setMode(!mode)}
+            // >
+            //   {mode ? (
+            //     <NightsStayIcon sx={{ color: "MenuText" }} />
+            //   ) : (
+            //     <LightModeIcon sx={{ color: "MenuText" }} />
+            //   )}
+            // </IconButton>
+            ""
           )}
         </Toolbar>
       </AppBar>

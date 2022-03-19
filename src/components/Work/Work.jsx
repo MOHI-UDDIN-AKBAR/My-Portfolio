@@ -80,9 +80,16 @@ const Work = () => {
                 spacing={5}
               >
                 <Grid item>
-                  <IconButton color="inherit" sx={{ p: 2 }}>
-                    <VisibilityIcon sx={{ fontSize: "40px" }} />
-                  </IconButton>
+                  <Link
+                    href={each.linkForLive}
+                    color="inherit"
+                    underline="none"
+                    target="_blank"
+                  >
+                    <IconButton color="inherit" sx={{ p: 2 }}>
+                      <VisibilityIcon sx={{ fontSize: "40px" }} />
+                    </IconButton>
+                  </Link>
                 </Grid>
                 <Grid item>
                   <Link
@@ -160,12 +167,15 @@ const Work = () => {
                         sx={{
                           m: { xs: 1, sm: 1, md: 2 },
                           p: 1,
-                          color: "#1f2633",
+                          // color: "#1f2633",
                           fontWeight: 450,
                         }}
                       >
-                        <FiberManualRecordIcon
+                        {/* <FiberManualRecordIcon
                           sx={{ fontSize: "12px", color: "#1f2633", mr: 1 }}
+                        /> */}
+                        <FiberManualRecordIcon
+                          sx={{ fontSize: "12px", mr: 1 }}
                         />
                         {ingredient}
                       </Typography>
@@ -215,9 +225,16 @@ const Work = () => {
                   spacing={5}
                 >
                   <Grid item>
-                    <IconButton color="inherit" sx={{ p: 2 }}>
-                      <VisibilityIcon sx={{ fontSize: "40px" }} />
-                    </IconButton>
+                    <Link
+                      href={each.linkForLive}
+                      color="inherit"
+                      underline="none"
+                      target="_blank"
+                    >
+                      <IconButton color="inherit" sx={{ p: 2 }}>
+                        <VisibilityIcon sx={{ fontSize: "40px" }} />
+                      </IconButton>
+                    </Link>
                   </Grid>
                   <Grid item>
                     <Link
