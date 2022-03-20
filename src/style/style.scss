@@ -96,17 +96,41 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .name {
+    animation: name 1s 1 linear;
+  }
+  .title {
+    // animation: title 1s 1 linear;
+  }
+}
+@keyframes name {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes title {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 //Style for About
 .about {
-  height: 90vh;
+  height: 100vh;
   margin-bottom: 10vh;
   // color: white;
   // background-color: #1f2633;
   @include flexCenter(center, column);
   .title {
-    animation: title 1s 1 linear;
+    animation: title 2s 1 linear;
   }
   .description {
     animation: description 1s 1 linear;
@@ -114,8 +138,11 @@
 }
 @keyframes title {
   0% {
-    transform: scale(2, 2);
+    opacity: 0;
   }
+  // 100% {
+  //   opacity: 1;
+  // }
 }
 @keyframes description {
   0% {
@@ -132,13 +159,9 @@
 //style for Work
 .projects {
   min-height: fit-content;
-  // overflow: scroll;
   margin: 5vh auto;
-  // color: white;
-  // background-color: #1f2633;
+
   .projectInfo {
-    // border: 2px solid green;
-    // box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5) inset;
     position: relative;
     .number {
       position: absolute;
@@ -168,7 +191,7 @@
     }
   }
   .forAnimation {
-    // animation: hideAndShow 1s 1 linear;
+    animation: hideAndShow 1s 1 linear;
   }
 }
 @keyframes hideAndShow {
@@ -219,7 +242,8 @@
     @include flexCenter(center, row);
   }
 }
-// .changeMode {
-//   background-color: #1f2633;
-//   color: white;
-// }
+
+.WorkTitle {
+  width: 100%;
+  @include flexCenter(center, row);
+}

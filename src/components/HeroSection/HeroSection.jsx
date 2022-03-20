@@ -11,6 +11,7 @@ const HeroSection = () => {
         variant="h1"
         sx={{ fontSize: { xs: "4rem", sm: "5rem", md: "6rem" } }}
         fontFamily="Smooch"
+        className="name"
       >
         Mohi Uddin
       </Typography>
@@ -20,6 +21,7 @@ const HeroSection = () => {
         variant="h3"
         fontFamily="Amarante"
         sx={{ fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" } }}
+        className="title"
       >
         Front-End Developer
       </Typography>

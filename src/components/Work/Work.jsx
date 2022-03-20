@@ -25,6 +25,20 @@ const Work = () => {
   const [animate, setAnimate] = useState(false);
   return (
     <>
+      <Box component="div">
+        <Typography
+          variant="h1"
+          sx={{
+            mb: { xs: "50px" },
+            width: 1,
+            fontFamily: "PT Serif",
+            mx: "auto",
+          }}
+          className="WorkTitle"
+        >
+          Work
+        </Typography>
+      </Box>
       <Box className="allProjects" component="div" id="work">
         {data?.map((each, i) => (
           <Box

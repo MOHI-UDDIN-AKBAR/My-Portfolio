@@ -5,7 +5,7 @@ import image3 from "../Work/assets/image3.png";
 export const data = [
   {
     title: "Hasina Store",
-    type: "Full-Stack Develope",
+    type: "Full-Stack Developer",
     description:
       "Hasina Store is a online e-commerce website which sell laptops. In this website, anyone can buy laptops with few simple steps. The main aim of this website is to provide technologies to each person in the world through selling laptop with least price.",
     ingredients: ["HTML", "CSS", "SCSS", "FIREBASE", "JAVASCRIPT"],

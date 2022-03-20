@@ -102,9 +102,48 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-
+.heroSection .name {
+  -webkit-animation: name 1s 1 linear;
+          animation: name 1s 1 linear;
+}
+@-webkit-keyframes name {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes name {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes title {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes title {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .about {
-  height: 90vh;
+  height: 100vh;
   margin-bottom: 10vh;
   display: flex;
   justify-content: center;
@@ -113,23 +152,17 @@
   flex-wrap: wrap;
 }
 .about .title {
-  -webkit-animation: title 1s 1 linear;
-          animation: title 1s 1 linear;
+  -webkit-animation: title 2s 1 linear;
+          animation: title 2s 1 linear;
 }
 .about .description {
   -webkit-animation: description 1s 1 linear;
           animation: description 1s 1 linear;
 }
 
-@-webkit-keyframes title {
-  0% {
-    transform: scale(2, 2);
-  }
-}
-
 @keyframes title {
   0% {
-    transform: scale(2, 2);
+    opacity: 0;
   }
 }
 @-webkit-keyframes description {
@@ -194,6 +227,11 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.projects .forAnimation {
+  -webkit-animation: hideAndShow 1s 1 linear;
+          animation: hideAndShow 1s 1 linear;
+}
+
 @-webkit-keyframes hideAndShow {
   0% {
     background-color: #1f2633;
@@ -205,6 +243,7 @@
     color: #1f2633;
   }
 }
+
 @keyframes hideAndShow {
   0% {
     background-color: #1f2633;
@@ -263,6 +302,15 @@
   color: white;
 }
 .footer .goodDay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.WorkTitle {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
