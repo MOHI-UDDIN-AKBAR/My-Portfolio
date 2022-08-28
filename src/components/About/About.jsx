@@ -31,8 +31,9 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        Hi, there! I am MOHI UDDIN and a Front-end Developer. Who like creating
-        things that live on internet and cares deeply about user experience.
+        Hey ! <br />I am so happy to see you here. I am a Front-end Developer
+        who loves React and Typescript. Besides, I like creating things that
+        live on the internet and care deeply about user experience.
       </Typography>
     </Box>
   );

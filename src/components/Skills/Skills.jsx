@@ -2,28 +2,43 @@ import React, { useState } from "react";
 import { FaReact, FaSass } from "react-icons/fa";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
 import {
   SiFirebase,
   SiJavascript,
   SiMaterialui,
   SiTailwindcss,
   SiMongodb,
+  SiTypescript,
+  SiNextdotjs,
+  SiExpress,
+  SiJest,
+  SiRedux,
+  SiGraphql,
+  SiEslint,
 } from "react-icons/si";
 import { Box, Button, Fab, Grid, Typography } from "@mui/material";
 const Skills = () => {
   const option = ["All", "comfortable", "familiar"];
   const icons = [
-    <FaReact />,
-    <FaSass />,
     <AiFillHtml5 />,
-    <AiFillGithub />,
     <DiCss3 />,
-    <SiFirebase />,
-
-    <SiJavascript />,
+    <FaSass />,
     <SiMaterialui />,
+    <SiJavascript />,
     <SiTailwindcss />,
+    <AiFillGithub />,
+    <FaReact />,
+    <SiRedux />,
+    <SiNextdotjs />,
+    <SiTypescript />,
+    <FaNodeJs />,
+    <SiExpress />,
+    <SiEslint />,
+    <SiJest />,
     <SiMongodb />,
+    <SiFirebase />,
+    <SiGraphql />,
   ];
   const tools = [<FaReact />, <FaSass />, <AiFillHtml5 />, <AiFillGithub />];
   const language = [<SiJavascript />];
@@ -88,8 +103,8 @@ const Skills = () => {
               xs: "100%",
               sm: "90%",
               md: "70%",
-              lg: "40%",
-              xl: "40%",
+              lg: "50%",
+              xl: "50%",
             },
             mt: "0px",
           }}
